@@ -1,43 +1,51 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   background-color: #000;
   overflow: hidden;
   height: 100vh;
 }
-i{
+i {
   position: absolute;
-  /* top: -300px; */
   background-color: white;
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
   height: 300px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  /* transform: rotate(45deg); */
-  animation: starDrop 5s infinite linear; 
+  animation: starDrop 5s infinite linear;
 }
 
-i:nth-child(3n+1){
-  /* background-color: rgb(252, 237, 170); */
-  background: rgb(252,237,170);
-background: linear-gradient(0deg, rgba(252,237,170,1) 0%, rgba(0,0,0,1) 100%);
+i:nth-child(3n + 1) {
+  background: rgb(252, 237, 170);
+  background: linear-gradient(
+    0deg,
+    rgba(252, 237, 170, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
-i:nth-child(3n+2){
-  background-color: rgb(194, 218, 255);
+i:nth-child(3n + 2) {
   background: rgb(194, 218, 255);
-background: linear-gradient(0deg, rgba(194,218,255,1) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(194, 218, 255, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
-@keyframes starDrop{
-  0%{
-    transform: rotate(45deg) translate(150px, -600px)
+@keyframes starDrop {
+  0% {
+    transform: rotate(45deg) translate(130px, -600px);
   }
 
-  100%{
-    transform: rotate(45deg) translate(0px, calc(100vh + 300px))
+  100% {
+    transform: rotate(45deg) translate(0px, calc(100vh + 300px));
   }
 }
