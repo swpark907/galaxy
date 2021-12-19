@@ -9,12 +9,13 @@
 </head>
 <body>
   <span class="moon"></span>
+  <span class="sea"></span>
   <script>
     const moon = document.querySelector('.moon');
     const body = document.querySelector('body');
     moon.onclick = () => {
-      // body.classList.toggle('day');
-      // moon.classList.toggle('sun')
+      body.classList.toggle('day');
+      moon.classList.toggle('sun')
     }
     function galaxy() {
       let amountMeteor = 30;
@@ -24,7 +25,7 @@
       let j = 0;
       while(i < amountMeteor){
         let drop = document.createElement('i');
-        let size = Math.random() * 3 + 0.5;
+        let size = Math.random() * 4 + 0.5;
         let posX = Math.floor(Math.random() * window.innerWidth);
         let delay = Math.random() * -20;
         let duration = Math.random() * 6 + 1;
